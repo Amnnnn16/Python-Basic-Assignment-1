@@ -31,8 +31,6 @@ def get_ec2_recommendation(instance_type, cpu_utilization):
 
     recommended_instance = f"{family}.{new_size}"
 
-    print('Current EC2    Current CPU%    Status         Recommended EC2')
-    print('--------------------------------------------------------------------------')
     print(f"{instance_type}        {cpu_utilization}             {status}      {recommended_instance}")
 
 get_ec2_recommendation("t2.large", 81)
